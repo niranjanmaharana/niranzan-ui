@@ -1,0 +1,111 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.portfolio-area {
+  position: relative;
+  z-index: 1;
+}
+
+.section-tittle {
+  margin-bottom: 76px;
+}
+
+.section-tittle p {
+  color: $base-color-hover;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.portfolio-area .grid-sizer,
+.portfolio-area .grid-item {
+  width: 33.33%;
+}
+
+.portfolio-area .grid-item {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  float: left;
+  height: 350px;
+  cursor: pointer;
+}
+
+.portfolio-area img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-area .grid-item .portfolio-hover-text i {
+  color: $base-color-hover;
+  font-size: 25px;
+  position: absolute;
+  top: 48%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 10px;
+  z-index: 9;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.portfolio-area .grid-item:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #ea5267; */
+  content: "";
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.portfolio-area .grid-item:hover:after {
+  opacity: .5;
+  padding: 10px;
+}
+
+.portfolio-area .grid-item:hover .portfolio-hover-text i {
+  opacity: 1;
+}
+
+.portfolio-area .grid-item:hover img {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  .section-padding {
+    padding: 70px 0;
+  }
+
+  .section-tittle h2 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+
+  .portfolio-area .btn-more {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-tittle {
+    margin-bottom: 40px;
+  }
+
+  .portfolio-area .grid-sizer,
+  .portfolio-area .grid-item {
+    width: 50%;
+  }
+
+  .portfolio-area .grid-item {
+    height: auto;
+  }
+}

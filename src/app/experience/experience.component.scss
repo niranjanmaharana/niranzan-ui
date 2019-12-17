@@ -1,0 +1,45 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.single-job:hover {
+  cursor: pointer;
+  border: 1px solid $base-color-hover;
+}
+
+.single-job {
+  background-color: $job-background;
+  padding: 40px 30px;
+  margin-bottom: 30px;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  border: 1px solid transparent;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.single-job .top-left h4 {
+  color: $base-black;
+  font-size: 18px;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  font-weight: 700;
+}
+
+.single-job .company {
+  font-size: 15px;
+  font-weight: 700;
+  color: $base-text;
+}
+
+.single-job .duration {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.single-job .description {
+  text-align: justify;
+}

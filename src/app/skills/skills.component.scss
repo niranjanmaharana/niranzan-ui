@@ -1,0 +1,54 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.single-skill {
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.single-skill p {
+  border-radius: 4px;
+  color: white;
+  padding: 0px 2px 0px 10px;
+  background: $skill-row-background;
+}
+
+.color-lightsalmon {
+  background-color: $color-lightsalmon;
+}
+
+.color-coral {
+  background-color: $color-coral;
+}
+
+.color-tomato {
+  background-color: $color-tomato;
+}
+
+.color-orangered {
+  background-color: $color-orangered;
+}
+
+.color-darkorange {
+  background-color: $color-darkorange;
+}
+
+.color-orange {
+  background-color: $color-orange;
+}
+
+.color-indianred {
+  background-color: $color-indianred;
+}
+
+.color-lightcoral {
+  background-color: $color-lightcoral;
+}
+
+.color-salmon {
+  background-color: $color-salmon;
+}
+
+.color-darksalmon {
+  background-color: $color-darksalmon;
+}
