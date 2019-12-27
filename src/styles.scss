@@ -1,1 +1,130 @@
-/* You can add global styles to this file, and also import other style files */
+@import './sass/variables';
+@import './sass/mixins';
+
+@import './assets/styles/buttons.scss';
+@import './assets/styles/form-controls.scss';
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  src: url(../src/assets/fonts/opensans/OpenSans-Regular.ttf);
+}
+
+body {
+  font-family: 'Open Sans' !important;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  background: $base-background;
+  color: $base-text;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+p {
+  line-height: 28px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  text-transform: capitalize;
+  position: relative;
+  line-height: 44px;
+}
+
+.section-title h2:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 10px;
+  height: 10px;
+  background: $base-color-hover;
+  border-radius: 7px;
+}
+
+.section-title h2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100px;
+  height: 2px;
+  background: $base-color-hover;
+}
+
+section.odd {
+  background: $base-odd-background;
+}
+
+section.even {
+  background: $base-background;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  .section-padding {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .section-title h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}

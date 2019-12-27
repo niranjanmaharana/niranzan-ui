@@ -1,0 +1,122 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.footer-area {
+  background-color: $banner-text;
+}
+
+.footer-area .footer-text,
+.footer-area .footer-text a {
+  margin-bottom: 40px;
+  color: $base-background;
+}
+
+.footer-area .footer-text a:hover {
+  text-decoration: underline;
+}
+
+.footer-area .footer-text span {
+  color: $base-background;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.footer-area .footer-text h2 a {
+  font-size: 16px;
+  color: $base-background;
+  text-decoration: underline;
+}
+
+.footer-area .footer-btn {
+  text-align: right;
+}
+
+.footer-area .footer-menu a {
+  color: $base-background;
+  margin-right: 15px;
+}
+
+.footer-area .social-icon {
+  text-align: right;
+}
+
+.footer-area .social-icon a {
+  color: $base-background;
+  margin-left: 20px;
+}
+
+.footer-area .copyright-area {
+  padding: 30px;
+}
+
+.flex-column {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer-area .footer-logo {
+  text-align: center;
+  color: $base-background;
+}
+
+.footer-area .footer-logo h4 {
+  font-size: 21px;
+  color: $base-background;
+  font-weight: 700;
+  margin-top: 48px;
+}
+
+.footer-area .footer-social {
+  text-align: center;
+  margin: 25px 0 50px;
+}
+
+.footer-area .footer-social a {
+  padding: 0 20px;
+}
+
+.footer-area .footer-social a i {
+  color: $base-background;
+  font-size: 36px;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.footer-area .footer-social a i:hover {
+  color: $base-color-hover;
+}
+
+.footer-area .footer-bottom {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-area .footer-text {
+    text-align: center;
+  }
+
+  .footer-area .footer-text {
+    margin-bottom: 15px;
+  }
+
+  .footer-area .footer-btn {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-area .footer-menu {
+    text-align: center;
+  }
+
+  .footer-area .social-icon {
+    text-align: center;
+    margin-top: 30px;
+  }
+}

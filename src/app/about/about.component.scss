@@ -1,0 +1,68 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.about-area h4 {
+  font-size: 16px;
+  color: $base-color-hover;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.about-area .about-text .experiance {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 55px;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  .section-padding {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-area h4 {
+    margin-bottom: 25px;
+  }
+
+  .about-area .about-text .experiance {
+    margin-bottom: 25px;
+  }
+
+  .about-area .about-text .experiance h2 {
+    font-size: 80px;
+    line-height: 55px;
+  }
+}
+
+
+// .about-area .about-text .experiance h2 {
+//   font-size: 120px;
+//   color: #ffd200;
+//   font-weight: 700;
+//   display: inline-block;
+//   line-height: 84px;
+// }
+
+// .about-area .about-text .experiance p span {
+//   display: block;
+// }
+
+// .about-area .experiance-list .experiance-list-iner {
+//   columns: 2;
+// }
+
+// .about-area .experiance-list .experiance-list-iner .single-experiance-list {
+//   margin-bottom: 31px;
+// }
+
+// .about-area .experiance-list .experiance-list-iner .single-experiance-list h5 {
+//   font-size: 18px;
+//   color: #fff;
+//   margin-bottom: 12px;
+// }
+
+// .about-area .experiance-list .experiance-list-iner .single-experiance-list p {
+//   font-size: 16px;
+//   color: #c5c5c5;
+// }
